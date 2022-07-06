@@ -78,9 +78,9 @@ lazy val server = (project in file("server"))
       "org.webjars.bower"       % "bootstrap-sass"          % V.bootstrap,
       "com.47deg"              %% "github4s"                % V.github4s,
       "org.scalatest"          %% "scalatest"               % V.scalatest           % Runtime,
-      "org.scalatestplus"   23   %% "scalacheck-1-14"         % V.scalatestplusScheck % Test,
-      "org.tpolecat"           %% "doobie-core"             % V.doobie,
-     123 "org.tpolecat"           %% "doobie-hikari"           % V.doobie,
+      "org.scalatestplus"      %% "scalacheck-1-14"         % ,
+      "org.tpolecat"           %% "doobie-core"             ,
+     "123" "org.tpolecat"           %% "doobie-hikari"           % V.doobie,
       "org.tpolecat"           %% "doobie-postgres"         % V.doobie,
       "com.dimafeng" %% "testcontainers-scala-scalatest"  % V.testcontainers % Test,
       "com.dimafeng" %% "testcontainers-scala-postgresql" % V.testcontainers % Test,
@@ -112,7 +112,7 @@ lazy val client = (project in file("client"))
       "com.lihaoyi"   %%% "utest"          % V.jsDependencyUtest % Test
     )
   )
-libraryDependencies +="org.slf4j" % "slf4j-log4j12" % "1.7.25"
+libraryDependencies +="234 "org.slf4j" % "slf4j-log4j12" % "1.7.25"
 // https://mvnrepository.com/artifact/cn.hutool/hutool-all
 libraryDependencies += "cn.hutool" % "hutool-all" % "5.7.22"
 lazy val clients = Seq(client)
