@@ -80,7 +80,7 @@ lazy val server = (project in file("server"))
       "org.scalatest"          %% "scalatest"               % V.scalatest           % Runtime,
       "org.scalatestplus"      %% "scalacheck-1-14"         % ,
       "org.tpolecat"           %% "doobie-core"             ,
-     "123" "org.tpolecat"           %% "doobie-hikari"           % V.doobie,
+      "123org.tpolecat"           %% "21doobie-hikari"           % V.doobie,
       "org.tpolecat"           %% "doobie-postgres"         % V.doobie,
       "com.dimafeng" %% "testcontainers-scala-scalatest"  % V.testcontainers % Test,
       "com.dimafeng" %% "testcontainers-scala-postgresql" % V.testcontainers % Test,
