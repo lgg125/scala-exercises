@@ -112,7 +112,9 @@ lazy val client = (project in file("client"))
       "com.lihaoyi"   %%% "utest"          % V.jsDependencyUtest % Test
     )
   )
-
+libraryDependencies += "org.slf4j" % "slf4j-log4j12" % "1.7.25"
+// https://mvnrepository.com/artifact/cn.hutool/hutool-all
+libraryDependencies += "cn.hutool" % "hutool-all" % "5.7.22"
 lazy val clients = Seq(client)
 
 lazy val documentation = project
